@@ -1,8 +1,26 @@
 <div class="main__quote text-center">
-  « {{ quote.sentence }} »
+  «&nbsp;{{ quote.sentence }}&nbsp;»
   <p>
     <button class="btn btn-primary btn-lg" ng-click="main.generate()">
       Générez une autre phrase
     </button>
+    <span class="btn-group">
+      <button socialshare
+         socialshare-text="{{ quote.sentence }}"
+         socialshare-url="{{ quote.url }}"
+         socialshare-provider="twitter"
+         class="btn btn-default btn-lg">
+        <i class="fa fa-fw fa-twitter"></i>
+        TW
+      </button>
+      <button socialshare
+         socialshare-text="{{ quote.sentence }}"
+         socialshare-url="{{ quote.url }}"
+         socialshare-provider="facebook"
+         class="btn btn-default btn-lg">
+        <i class="fa fa-fw fa-facebook"></i>
+        FB
+      </button>
+    </span>
   </p>
 </div>

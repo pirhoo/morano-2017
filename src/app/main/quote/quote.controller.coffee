@@ -1,4 +1,4 @@
 angular.module 'morano2017'
-  .controller 'MainQuoteController', (sentence)->
+  .controller 'MainQuoteController', ($state, $stateParams, sentence)->
     @sentence = sentence
-    null
+    @url = $state.href 'main.quote', $stateParams, absolute: yes
