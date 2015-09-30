@@ -6,7 +6,7 @@ angular.module 'morano2017'
       "J'aime lire"
       "Ça cartoon"
       "Télématin"
-      "Génération Loustic"
+      "Radio Loustic"
       "Mickey Parade"
       "Le chasseur français"
       "Production laitière magazine"
