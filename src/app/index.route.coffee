@@ -14,7 +14,7 @@ angular.module 'morano2017'
             # Load facts' parts
             $http.get('assets/facts.json').then (r)-> r.data
       .state 'main.quote',
-        url: ':p1|:p2|:p3'
+        url: ':p1::p2::p3'
         templateUrl: 'app/main/quote/quote.html'
         controller: 'MainQuoteController'
         controllerAs: 'quote'
