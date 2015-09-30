@@ -1,6 +1,6 @@
 <div class="main__quote text-center">
   <p class="main__quote__sentence">
-    ❝&nbsp;{{ quote.sentence }}&nbsp;❞        
+    ❝&nbsp;{{ quote.nonBreaking(quote.sentence) }}&nbsp;❞        
   </p>
   <p class="main__quote__meta">
      {{ quote.tomorrow | date:'dd/MM/yyyy' }} — {{ quote.media }}
