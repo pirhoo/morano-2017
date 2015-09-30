@@ -3,18 +3,16 @@
     ❝&nbsp;{{ quote.nonBreaking(quote.sentence) }}&nbsp;❞        
   </p>
   <p class="main__quote__meta">
-     {{ quote.tomorrow | date:'dd/MM/yyyy' }} — {{ quote.media }}
-  </p>
-  <p class="main__quote__actions">
-    <button class="btn btn-primary btn-lg" ng-click="main.generate()">
-      Générez une autre phrase
-    </button>
+    {{ quote.tomorrow | date:'dd/MM/yyyy' }}
+     — 
+    {{ quote.media }}
+     — 
     <span class="">
       <button socialshare
          socialshare-text="EXCLU : la phrase culte que Nadine Morano dira demain"
          socialshare-url="{{ quote.url }}"
          socialshare-provider="twitter"
-         class="btn btn-outline btn-lg">
+         class="btn btn-outline btn-sm">
         <i class="fa fa-fw fa-twitter"></i>
         <span class="sr-only">Twitter</span>
       </button>
@@ -26,10 +24,15 @@
          socialshare-via="732431740195590"
          socialshare-description="Générez instantanément la phrase culte que Nadine Morano dira demain."
          socialshare-redirect-uri="http://www.morano2017.com/close.html"
-         class="btn btn-outline btn-lg">
+         class="btn btn-outline btn-sm">
         <i class="fa fa-fw fa-facebook"></i>
         <span class="sr-only">Facebook</span>        
       </button>
     </span>
+  </p>
+  <p class="main__quote__actions">
+    <button class="btn btn-primary btn-lg" ng-click="main.generate()">
+      Générez une autre phrase
+    </button>
   </p>
 </div>
