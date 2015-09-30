@@ -112,3 +112,9 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', ['html', 'fonts', 'csv', 'other']);
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src(path.join(conf.paths.dist, '/**/*')).pipe($.ghPages({
+    remoteUrl: "git@github.com:pirhoo/morano-2017.git"
+  }));
+});
