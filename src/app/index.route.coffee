@@ -23,4 +23,4 @@ angular.module 'morano2017'
             # State params shortcut
             p = $stateParams
             # Create the quote from state params
-            [ facts.p1[p.p1], facts.p2[p.p2], facts.p3[p.p3] ].join ' '
+            [ facts.p1[p.p1], facts.p2[p.p2], facts.p3[p.p3] ].join ''
