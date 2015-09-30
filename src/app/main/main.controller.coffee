@@ -1,12 +1,12 @@
 angular.module 'morano2017'
   .controller 'MainController', ($state, facts)->
     @bg = 'nadine-' + Math.floor(Math.random() * 5)
-    @generate = ->      
+    @generate = ->
       @bg = 'nadine-' + Math.floor(Math.random() * 5)
       # Initial parameters' values
-      params = p1: null, p2: null, p3: null  
+      params = p1: null, p2: null, p3: null
       # Avoid having the original sentence
-      while params.p1 is params.p2 and params.p2 is params.p3 
+      while params.p1 is params.p2 and params.p2 is params.p3
         # Until every parameters is fill
         for p in [1..3]
           # Build parameter key

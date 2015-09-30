@@ -3,18 +3,18 @@ angular.module 'morano2017'
     @sentence = sentence
     @url = $state.href 'main.quote', $stateParams, absolute: yes
     @medias = [
-    	"J'aime lire"
-    	"Le chasseur français"
-    	"Production laitière magazine"
-    	"Santiag magazine"
-    	"L'Express"
-    	"Le Point"
-    	"Valeurs actuelles"
-    	"L'Usine nouvelle"
-    	"Mon quotidien"
-    	"Le Monde"
-    	"AFP"
-    	"Le Figaro"
+        "J'aime lire"
+        "Le chasseur français"
+        "Production laitière magazine"
+        "Santiag magazine"
+        "L'Express"
+        "Le Point"
+        "Valeurs actuelles"
+        "L'Usine nouvelle"
+        "Mon quotidien"
+        "Le Monde"
+        "AFP"
+        "Le Figaro"
     ]
     # Shuffle the media list
     @media = @medias[ Math.floor(Math.random() * @medias.length) ]
