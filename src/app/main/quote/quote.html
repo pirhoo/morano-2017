@@ -1,12 +1,17 @@
 <div class="main__quote text-center">
-  <p class="main__quote__sentence">❝&nbsp;{{ quote.sentence }}&nbsp;❞</p>
+  <p class="main__quote__sentence">
+    ❝&nbsp;{{ quote.sentence }}&nbsp;❞        
+  </p>
+  <p class="main__quote__meta">
+     {{ quote.tomorrow | date:'dd/MM/yyyy' }} — {{ quote.media }}
+  </p>
   <p>
     <button class="btn btn-primary btn-lg" ng-click="main.generate()">
       Générez une autre phrase
     </button>
     <span class="">
       <button socialshare
-         socialshare-text="❝{{ quote.sentence }}❞"
+         socialshare-text="EXCLU : La phrase culte que Nadine Morano dira demain"
          socialshare-url="{{ quote.url }}"
          socialshare-provider="twitter"
          class="btn btn-outline btn-lg">

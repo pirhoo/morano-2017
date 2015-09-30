@@ -8,6 +8,11 @@
   background:fade(#202F55, 80%);
   color:white;
 
+  h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
   &:after,
   &:before {
     overflow:hidden;
@@ -69,13 +74,43 @@
     max-width: 900px;
   }
 
+  &__lead {
+
+    &__generate {
+      margin-top:40px;
+      padding:5px;
+      display: inline-block;
+      border:1px solid white;
+      position: relative;
+
+      &:after,
+      &:before {
+        content:"";
+        width:100px;
+        position: absolute;
+        top:50%;
+        border:1px solid white;
+        border-right:0;
+        border-left:0;
+        height:6px;
+        .translate(0, -50%);
+      }
+
+      &:after {
+        right:100%;
+      }
+
+      &:before {
+        left:100%;
+      }
+    }
+  } 
+
   &__quote {
-    font-size:50px;
-    font-weight: 900;
 
     &__sentence {
-      padding-bottom:30px;
-      margin-bottom:30px;
+      font-size:50px;
+      font-weight: 900;
       position:relative;
 
       &:after {
@@ -85,12 +120,19 @@
         position: absolute;
         top:100%;
         left:50%;
-        .translate(-50%, 0);
+        .translate(-50%, 70px);
         height:6px;
         border:1px solid white;
         border-right:0;
         border-left:0;
       }
+    }
+
+    &__meta {
+      padding-bottom:30px;
+      margin-bottom:60px;
+      font-size:1.3em;
+      color:mix(#202F55, white);
     }
   }
 }

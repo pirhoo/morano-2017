@@ -2,9 +2,17 @@
   <img class="main__bg" ng-src="assets/images/{{ main.bg }}.jpg" />
 	<div class="main__credit">Site parodique par <a href="https://twitter.com/ThePixelHunt" target="_blank">@ThePixelHunt</a> &amp; <a href="https://twitter.com/pirhoo" target="_blank">@Pirhoo</a></div>
   <div ui-view>
+  	<div class="main__hexagon"></div>
 	  <div class="lead main__lead text-center">
-	    <p>Générez instantanément la prochaine phrase culte de Nadine Morano.</p>
+	  	<h1>
+	  		<span class="tricolor">Nadine Morano</span> 
+	  		2017
+	  	</h1>
 	    <p>
+	    	C'est officiel, <strong>Nadine Morano</strong> est en campagne.<br />
+	    	Générez instantanément sa phrase culte de demain.
+	    </p>
+	    <p class="main__lead__generate">
 	      <button class="btn btn-primary btn-lg" ng-click="main.generate()">
 	        Générez
 	      </button>
