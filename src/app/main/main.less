@@ -109,9 +109,17 @@
   &__quote {
 
     &__sentence {
-      font-size:50px;
+      font-size:40px;
       font-weight: 900;
       position:relative;
+
+      @media (max-width: @screen-sm-max) {
+        font-size:20px;
+      }
+      
+      @media (max-height: 600px) {
+        font-size:20px;
+      }
 
       &:after {
         content:"";
@@ -133,6 +141,10 @@
       margin-bottom:60px;
       font-size:1.3em;
       color:mix(#202F55, white);
+    }
+
+    &__actions {
+      white-space: nowrap;
     }
   }
 }
