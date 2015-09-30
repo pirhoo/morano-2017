@@ -1,5 +1,6 @@
 angular.module 'morano2017'
   .controller 'MainController', ($state, facts)->
+    @bg = 'nadine-' + Math.floor(Math.random() * 5)
     @generate = ->      
       # Initial parameters' values
       params = p1: null, p2: null, p3: null

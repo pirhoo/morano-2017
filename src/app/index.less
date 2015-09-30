@@ -4,7 +4,8 @@
  */
 // bower:less
 // endbower
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900");
 
 /**
  *  If you want to override some bootstrap variables, you have to change values here.
@@ -13,10 +14,23 @@
 @navbar-inverse-link-color: #5AADBB;
 @icon-font-path: '../../bower_components/bootstrap/fonts/';
 @brand-primary: #3695FF;
-
+@font-family-base: 'Source Sans Pro';
+@btn-font-weight: bold;
 @border-radius-base: 0;
 @border-radius-small: @border-radius-base;
 @border-radius-large: @border-radius-base;
+
+
+.btn {
+	text-transform: uppercase;
+}
+
+.btn-outline,
+.btn-outline:hover {
+	border-color:white;
+	background:transparent;
+	color:white;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
