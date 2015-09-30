@@ -9,7 +9,7 @@ angular.module 'morano2017'
     	"Santiag magazine"
     	"L'Express"
     	"Le Point"
-    	"Valeur actuelle"
+    	"Valeurs actuelles"
     	"L'Usine nouvelle"
     	"Mon quotidien"
     	"Le Monde"
