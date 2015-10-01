@@ -22,6 +22,5 @@ gulp serve
 Run the following commands
 
 ```
-gulp
 gulp deploy
 ```
