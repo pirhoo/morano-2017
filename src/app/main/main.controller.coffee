@@ -1,7 +1,10 @@
 angular.module 'morano2017'
   .controller 'MainController', ($state, facts)->
+    # Background image
     @bg = 'nadine-' + Math.floor(Math.random() * 5)
+    # Generate a new sentence
     @generate = ->
+      # Regenerates the background image
       @bg = 'nadine-' + Math.floor(Math.random() * 5)
       # Initial parameters' values
       params = p1: null, p2: null, p3: null
